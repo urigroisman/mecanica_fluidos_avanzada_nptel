@@ -1,0 +1,55 @@
+
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\usepackage{physics}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\begin{document}
+
+\section*{Vector Calculus and Differential Equations Problems}
+
+\subsection*{Problem 1: Coplanarity of Three Vectors}
+
+The three vectors \( \vec{a}, \vec{b}, \vec{c} \) are coplanar if and only if their scalar triple product is zero:
+\[
+\vec{a} \cdot (\vec{b} \times \vec{c}) = 0
+\]
+
+This condition ensures the volume of the parallelepiped formed by the vectors is zero, i.e., they lie in the same plane.
+
+\noindent\textbf{Final Answer: } \fbox{$\vec{a} \cdot (\vec{b} \times \vec{c}) = 0$}
+
+\bigskip
+
+\subsection*{Problem 2: Tangent Plane to a Surface}
+
+We are given the surface:
+\[
+z = 2e^{-x} \sin(2y)
+\]
+and the point \( \left(0, \frac{\pi}{12}, 1\right) \). To find the tangent plane, we compute:
+
+\[
+f_x = -2e^{-x} \sin(2y), \quad f_y = 4e^{-x} \cos(2y)
+\]
+
+At \( (0, \frac{\pi}{12}) \), we evaluate:
+\[
+f_x = -2 \cdot \sin\left(\frac{\pi}{6}\right) = -1, \quad f_y = 4 \cdot \cos\left(\frac{\pi}{6}\right) = 2\sqrt{3}
+\]
+
+Using the tangent plane formula:
+\[
+z - 1 = -x + 2\sqrt{3} \left(y - \frac{\pi}{12} \right)
+\Rightarrow z = -x + 2\sqrt{3}y + \left(1 - \frac{\sqrt{3} \pi}{6} \right)
+\]
+
+Rewriting:
+\[
+x - 2\sqrt{3}y + z = \frac{6 - \sqrt{3}\pi}{6}
+\]
+
+\noindent\textbf{Final Answer: } \fbox{$x - 2\sqrt{3}y + z = \frac{-\sqrt{3} \pi + 6}{6}$}
+
+\end{document}
