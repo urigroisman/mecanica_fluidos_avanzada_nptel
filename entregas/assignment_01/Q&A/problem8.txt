@@ -1,0 +1,23 @@
+
+Problem 8 – Locus of a Fluid Particle
+
+Given:
+u = 0, v = y / (t + t0), w = 0
+A particle is injected at (x0, y0, z0) at time t = t0.
+
+We solve dx/dt = 0 -> x = x0, dz/dt = 0 -> z = z0
+For y: dy/dt = y / (t + t0)
+=> dy/y = dt / (t + t0)
+=> ln y = ln(t + t0) + C => y = C1(t + t0)
+Use y(t0) = y0 => y0 = C1(2t0) => C1 = y0 / 2t0
+=> y = (y0 / 2t0)(t + t0)
+
+Now eliminate t:
+t = (y - y0)/(2t0) + t0
+
+x = x0 => x/x0 = 1
+
+Final equation:
+x/x0 - (y - y0)/(2t0 v0) = 1
+
+Correct answer: (a)
