@@ -1,0 +1,48 @@
+
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{margin=1in}
+\begin{document}
+
+\section*{Problem 10: Validity of Euler’s Equations Near a Wall}
+
+\subsection*{Question}
+In the context of fluid flow over a flat plate, why is Euler’s equation not valid near the wall?
+
+\begin{itemize}
+  \item[(a)] The pressure gradient is zero near the wall
+  \item[(b)] The flow near the wall has high Reynolds number
+  \item[(c)] Viscous effects dominate in the flow near the wall
+  \item[(d)] The statement is false. Euler equation is valid near the wall
+\end{itemize}
+
+\subsection*{Euler’s Equations}
+Euler’s equations for an inviscid flow:
+\[
+\rho \left( \frac{\partial \vec{v}}{\partial t} + \vec{v} \cdot \nabla \vec{v} \right) = -\nabla p + \rho \vec{g}
+\]
+
+They neglect viscous effects and cannot capture no-slip boundary conditions or velocity gradients near walls.
+
+\subsection*{Flow Over a Flat Plate}
+\begin{itemize}
+  \item A boundary layer forms at the wall.
+  \item Inside the boundary layer, viscous effects dominate.
+  \item Hence, Euler’s equations are not valid within the boundary layer.
+\end{itemize}
+
+\subsection*{Option Analysis}
+\begin{itemize}
+  \item[(a)] Incorrect – Pressure gradient can exist near the wall.
+  \item[(b)] Incorrect – High Re does not mean inviscid behavior near the wall.
+  \item[(c)] \textbf{Correct} – Viscosity dominates near the wall.
+  \item[(d)] Incorrect – Euler’s equations do not apply near the wall.
+\end{itemize}
+
+\subsection*{Answer}
+\[
+\boxed{\text{(c) Viscous effects dominate in the flow near the wall}}
+\]
+
+\end{document}

@@ -1,0 +1,55 @@
+
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\title{Week 02 -- Problem 9: No-Slip Condition and Euler's Equations}
+\date{}
+\begin{document}
+\maketitle
+
+\section*{Problem}
+
+\textit{Why cannot the no-slip boundary condition be used when solving Euler’s equations for fluid flow?}
+
+\begin{itemize}
+\item[(a)] Because the flow is compressible
+\item[(b)] Because Euler’s equations do not account for body forces
+\item[(c)] Because Euler’s equations neglect viscosity
+\item[(d)] Because Euler’s equations assume irrotational flow
+\end{itemize}
+
+\section*{Analysis}
+
+Euler’s equations describe inviscid fluid flow:
+
+\[
+\rho \left( \frac{\partial \vec{v}}{\partial t} + (\vec{v} \cdot \nabla)\vec{v} \right) = -\nabla p + \rho \vec{g}
+\]
+
+These equations **neglect viscosity**.
+
+The no-slip boundary condition arises from viscous effects. It enforces:
+
+\[
+\vec{v}_{\text{fluid}} = \vec{v}_{\text{wall}}
+\]
+
+Such a condition cannot be physically justified when viscosity is zero. Therefore, it is incompatible with the Euler formulation.
+
+\section*{Evaluation of Options}
+
+\begin{itemize}
+\item[(a)] Irrelevant to no-slip — compressibility is unrelated.
+\item[(b)] Incorrect — Euler equations \textit{do} account for body forces.
+\item[(c)] \textbf{Correct} — no-slip requires viscosity.
+\item[(d)] Incorrect — Euler equations do not inherently assume irrotationality.
+\end{itemize}
+
+\section*{Final Answer}
+
+\[
+\boxed{\text{(c) Because Euler’s equations neglect viscosity}}
+\]
+
+\end{document}

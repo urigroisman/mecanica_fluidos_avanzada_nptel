@@ -1,0 +1,55 @@
+
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\title{Week 02 -- Problem 3: Velocity from Pitot and Piezometer Readings}
+\date{}
+\begin{document}
+\maketitle
+
+\section*{Problem Statement}
+
+A piezometer measures the \textbf{static pressure head}, and a Pitot tube measures the \textbf{total pressure head}. Both are connected to a 5 cm diameter horizontal water pipe.
+
+\begin{itemize}
+    \item Static head: $h_s = 16$ cm
+    \item Total head: $h_t = 36$ cm
+    \item Gravitational acceleration: $g = 10$ m/s\textsuperscript{2}
+\end{itemize}
+
+Determine the velocity at the center of the pipe.
+
+\section*{Theory and Assumptions}
+
+Using Bernoulli’s equation between a free-stream point and a stagnation point:
+
+\[
+p + \frac{1}{2} \rho v^2 = p_0
+\Rightarrow
+v = \sqrt{2g(h_t - h_s)}
+\]
+
+\section*{Computation}
+
+Convert heights to meters:
+
+\[
+h_t = 0.36 \text{ m}, \quad h_s = 0.16 \text{ m}
+\Rightarrow \Delta h = 0.20 \text{ m}
+\]
+
+Now compute:
+
+\[
+v = \sqrt{2 \cdot 10 \cdot 0.20} = \sqrt{4} = 2 \, \text{m/s}
+\]
+
+\section*{Final Answer}
+
+\[
+\boxed{v = 2 \, \text{m/s}} \quad \text{(Option b)}
+\]
+
+\end{document}
